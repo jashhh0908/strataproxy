@@ -1,0 +1,28 @@
+{
+  "name": "strataproxy",
+  "version": "1.0.0",
+  "description": "High-performance zero-dependency L7 Reverse Proxy & API Gateway in Node.js TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev:upstreamA": "tsx test-servers/upstreamA.ts",
+    "dev:upstreamB": "tsx test-servers/upstreamB.ts",
+    "dev:proxy": "tsx src/server.ts"
+  },
+  "keywords": [
+    "reverse-proxy",
+    "api-gateway",
+    "l7",
+    "typescript",
+    "lru-cache",
+    "rate-limiter"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
